@@ -1,0 +1,104 @@
+<!-- CE travail est présenté par;
+Mario Sekpona        20179552-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Horloge</title>
+	<meta charset="UTF-8">
+	<script src="script.js"></script>
+</head>
+<body>
+	
+	<div id="principal">
+	<svg id="notreSVG" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 800"  width="800" height="800"  xmlns:xlink="http://www.w3.org/1999/xlink">
+
+ 
+	
+	  <polygon id="polygon" points="54,200 400,0 746,200 746,600 400,800 54,600" fill="#81bce9" stroke="black"   stroke-width="2" style="opacity:0.3;" />
+	  <circle cx="400" cy="400" r="250" fill="#d3d698" stroke="black" stroke-width="5" />
+	  <rect id="rectDate" x="320" y="275" width="160" height="60" rx="3" ry="3" fill="rgba(240,240,240,0.8)" stroke="black"   stroke-width="1">
+	  	
+	  </rect>	
+	  <text id="textDate"  x="350" y="295" font-family="Verdana" font-weight="bold" font-size="1em" fill="black">
+   			 Bonjour tout le
+   			  monde!
+ 	 	</text>
+ 	  <text id="textHeure"  x="370" y="325" font-family="Verdana" font-size="" fill="black">
+   			 Bonjour tout le monde!
+ 	 	</text>
+
+	  <circle fill="none" stroke="#98c9d6" stroke-width="6" cx="400" cy="400" r="240" />
+	  <circle fill="#e74c3c" cx="400" cy="640" r="10" >
+    	<animateTransform
+	      attributeName="transform"
+	      dur="3600s"
+	      type="rotate"
+	      from="0 400 400"
+	      to="360 400 400"
+	      repeatCount="indefinite" 
+	      id="minute-anim"/>
+	    
+    
+ 	 </circle>
+	  <path id="aigHeure" d="M 400 400 L 550 396 L 550 393 L 566 400 L 550 407 L 550 404 " fill="#065e45" 
+	   >
+	  <animateTransform
+	      attributeName="transform"
+	      dur="86400s"
+	      type="rotate"
+	      from="0 400 400"
+	      to="360 400 400"
+	      repeatCount="indefinite" 
+	      id="heure-anim"/>
+	  
+	 </path> 
+	 
+	  <!--<animateTransform
+	  	attributeName="transform"
+	  	attributeType="XML"
+		type="rotate"
+		from="0 400 400"
+		to="360 400 400"
+		dur="60s"
+		repeatCount="1s"
+
+	  />-->
+ 
+	  </path>
+	  <g id="gTrait"  >
+	  </g>
+	<g id="gHeures" > 
+	  	
+
+
+	  </g>
+
+	  
+	  <g id="nuages"  >
+	  	
+	  	
+
+
+	  </g>
+	  <g id="set-rise-sun">
+	  	 
+	  	<foreignObject id="lever"  width="40px" height="40px" ><div id="emojiLever"></div> </foreignObject>
+
+	  	<foreignObject id="coucher"  width="40px" height="40px" ><div id="emojiCoucher"></div> </foreignObject>
+
+	  	
+
+	  </g>
+	  
+	  
+	 	
+	  
+
+
+	</svg>
+
+
+	</div>
+
+	</body>
+</html>
